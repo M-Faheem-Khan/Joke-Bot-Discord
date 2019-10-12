@@ -5,6 +5,7 @@ Joke Bot for Discord
 - `!joke` - will get you a new joke
 
 ### Built Using
+- https://geek-jokes.sameerkumar.website/api - api for jokes
 - NodeJS
 - Node-Fetch
 - Discord.js
