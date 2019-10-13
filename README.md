@@ -2,7 +2,9 @@
 Joke Bot for Discord
 
 ### Commands
-- `!joke` - will get you a new joke
+- `!joke` - returns a new joke
+- `!bot_time` - returns server time
+- `!help` - display some basic commands
 
 ### Built Using
 - https://geek-jokes.sameerkumar.website/api - api for jokes
