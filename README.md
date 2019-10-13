@@ -5,6 +5,7 @@ Joke Bot for Discord
 - `!joke` - returns a new joke
 - `!bot_time` - returns server time
 - `!help` - display some basic commands
+- `!coin_toss` - tosses a coin
 
 ### Built Using
 - https://geek-jokes.sameerkumar.website/api - api for jokes
