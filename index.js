@@ -33,7 +33,16 @@ client.on("message", message => {
 			} else if (command === "bot_time") { // bot time
 				message.reply(new Date().toISOString().toString()); // sending bot time
 			} else if (command === "help" || command === "about" || command === "info") { // showing help
-				message.reply("Bot - Help \nCommands: \n`!joke` - For a random Joke \n`!bot_time` - For Server Time \n`!help` - to view this help"); // help menu
+				message.reply("Bot - Help \nCommands: \n`!joke` - For a random Joke \n`!bot_time` - For Server Time \n`!help` - to view this help \n`!coin_toss` - tosses a coin"); // help menu
+			} else if (command === "coin_toss"){
+				let toss = Math.floor(Math.random() * 3); // 0 - Heads / 1 - Tails / 2 - Coin Landed in the middle
+				if (toss === 0 ) {
+					message.reply("Heads")
+				} else if (toss === 2) {
+					message.reply("Tails")
+				} else {
+					message.reply("Coin landed in the middle")
+				}
 			}
 		} else {
 			message.reply("ERROR - Invalid Command"); // if the user did not enter a valid commant
