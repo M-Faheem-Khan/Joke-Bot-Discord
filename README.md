@@ -21,5 +21,5 @@ Joke Bot for Discord
 - Filter by content category - nsfw / sfw 
 - Add more content 
 
-
-### CREATE A NEW BOT IN DISCORD AND GENERATE A NEW KEY FOR YOUR BOT AND PUT IT IN KEYS - THE `KEY THERE WILL NOT WORK!!`
+[comment]: <> (Add Instruction on how to generate a new key for bot)
+#### GENERATE NEW KEY & REPLACE IT WITH KEY IN /CONFIG/keys.js
