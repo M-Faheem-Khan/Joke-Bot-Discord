@@ -18,7 +18,7 @@ Joke Bot for Discord
 
 ### Todo
 - Add more commands
-  - Generate a Random Number
+  - Generate a Random Number -r [start] [end]
   - Random Fact
   - Create a random picture of a given size (Just random colored pixels)
   - Randomize given list of things [command] [delimter(-d ":")] [list:of:content] - something like unix command
