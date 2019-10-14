@@ -18,8 +18,12 @@ Joke Bot for Discord
 
 ### Todo
 - Add more commands
-- Filter by content category - nsfw / sfw 
-- Add more content 
+  - Generate a Random Number
+  - Random Fact
+  - Create a random picture of a given size (Just random colored pixels)
+  - Randomize given list of things [command] [delimter(-d ":")] [list:of:content] - something like unix command
+  - Play Ping Pong
+
 
 [comment]: <> (Add Instruction on how to generate a new key for bot)
 #### GENERATE NEW KEY & REPLACE IT WITH KEY IN /CONFIG/keys.js
