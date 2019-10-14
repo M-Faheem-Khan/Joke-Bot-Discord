@@ -80,13 +80,34 @@ client.on("message", message => {
 					message.reply(r);
 				} else if (toss === 2) {
 					let r = "Tails";
-					data.response = r;					
+					data.response = r;
 					message.reply(r);
 				} else {
 					let r = "Coin landed in the middle";
 					data.response = r;
 					message.reply(r);
 				}
+			} else if (command.startsWith("random_number")) { // !random_number 1-10
+				let startNum;
+				let endNum;
+				if (command == "random_number") {
+					// default values
+					startNum = 0;
+					endNum = 10;
+				} else {
+					// getting the starting
+					// starting number 
+					command = command.replace("random_number ", "");
+					command = command.split("-");
+					startNum = parseInt(command[0]);
+					endNum = parseInt(command[1]);
+				}
+
+				let randomNumber = Math.floor(Math.random() * endNum);
+				let r = `Random Number: ${randomNumber}`;
+				console.log(r);
+				data.response = r;
+				message.reply(r);
 			}
 		} else {
 			let r = "ERROR - Invalid Command";
@@ -100,15 +121,16 @@ client.on("message", message => {
 			console.log("Message Logged");
 		}).catch((err) => {
 			console.log(err);
-		})
+		});
 
-
-		// Saving Error
-		new Errors(errors).save().then(() => {
-			console.log("Error Logged");
-		}).catch((err) => {
-			console.log(err);
-		})
+		if (errors.error !== null) {
+			// Saving Error
+			new Errors(errors).save().then(() => {
+				console.log("Error Logged");
+			}).catch((err) => {
+				console.log(err);
+			})
+		}
 
 	}
 
