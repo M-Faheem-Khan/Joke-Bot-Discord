@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-// Creating Schema for Message
+// Creating Schema for Errors
 const ErrorsSchema = new Schema({
     author: {
         type: String,
